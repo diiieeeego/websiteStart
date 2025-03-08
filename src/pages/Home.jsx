@@ -6,7 +6,7 @@ import {Sun} from "lucide-react"
 const Home = () => {
   return (
     <div className="space-y-8">
-      <H1>Home <Sun size={32} /></H1>
+      <div className="flex items-center gap-2"><H1>Home </H1><Sun size={32} /></div>
       <H2>Lorem ipsum dolor sit amet consectetur adipisicing elit</H2>
       <p>
         Odio iusto obcaecati libero maiores quos maxime dolorem esse culpa
