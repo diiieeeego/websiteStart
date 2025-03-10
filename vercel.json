@@ -1,0 +1,22 @@
+{
+    "rewrites": [
+      {
+        "source": "/auth/*",
+        "destination": "https://your-backend-url.onrender.com/auth/:path*"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/dashboard",
+        "destination": "/dashboard",
+        "statusCode": 200
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
