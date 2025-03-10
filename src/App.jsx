@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Layout from './layouts/Layout';
-import Dashboard from './layouts/Dashboard';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
