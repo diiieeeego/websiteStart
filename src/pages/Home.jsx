@@ -1,14 +1,11 @@
-import { useEffect } from "react";
+
 import { useAuth } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const { user, login } = useAuth();
-  const navigate = useNavigate();
+  const { login } = useAuth();
+  
 
-  useEffect(() => {
-    if (user) navigate("/dashboard");
-  }, [user]);
+  
 
   return (
     <div>
