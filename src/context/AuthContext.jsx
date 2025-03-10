@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     // Fetch user session from backend
-    fetch("https://gameofsol.onrender.com/auth/user", {
+    fetch("https://gameofsolapi.onrender.com/auth/user", {
       credentials: "include",
     })
       .then((res) => res.json())
@@ -20,11 +20,11 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = () => {
-    window.location.href = "https://gameofsol.onrender.com/auth/discord";
+    window.location.href = "https://gameofsolapi.onrender.com/auth/discord";
   };
 
   const logout = () => {
-    fetch("https://gameofsol.onrender.com/auth/logout", {
+    fetch("https://gameofsolapi.onrender.com/auth/logout", {
       credentials: "include",
     }).then(() => {
       setUser(null);
