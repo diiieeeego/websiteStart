@@ -1,16 +1,8 @@
 {
     "rewrites": [
       {
-        "source": "/auth/:path*",
-        "destination": "https://your-backend-url.onrender.com/auth/:path*"
-      }
-    ],
-    "redirects": [],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
+        "source": "/(.*)",
+        "destination": "/index.html"
       }
     ]
   }
-  
