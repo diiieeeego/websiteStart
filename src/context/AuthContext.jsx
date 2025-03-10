@@ -7,17 +7,13 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch user session from backend
     fetch("https://gameofsolapi.onrender.com/auth/user", {
-      credentials: "include",
+      credentials: "include", // Allows sending cookies
     })
       .then((res) => res.json())
-      .then((data) => {
-        setUser(data?.id ? data : null);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
+      .then((data) => setUser(data));
   }, []);
+  
 
   const login = () => {
     window.location.href = "https://gameofsolapi.onrender.com/auth/discord";
